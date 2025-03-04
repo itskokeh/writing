@@ -1,18 +1,18 @@
 # Version Control for Non-Technical Creators: Comprehensive Guide
 
 ## Document Outline
-## Introduction <br>
+## 1. Introduction
 What is version control?  
 Why creators need version control  
 Brief history and evolution
 
-## Problems Version Control Solves
+## 2. Problems Version Control Solves
 Document management challenges  
 Risk of lost work  
 Collaboration complications  
 current inefficient workflows  
 
-## Git Fundamentals
+## 3. Git Fundamentals
 Core concepts explained  
 Repositories  
 Commits  
@@ -20,14 +20,14 @@ Branches
 Merging  
 Visual diagrams explaining each concept
 
-## Practical Use Cases
+## 4. Practical Use Cases
 For Writers  
 For Researchers  
 For Academics  
 For Collaborative Projects  
 Real-world scenario illustrations
 
-## Implementation Guide
+## 5. Implementation Guide
 Choosing Git Platform  
 Setting up first repository  
 Basic commands  
