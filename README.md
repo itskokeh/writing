@@ -4,7 +4,7 @@
 ## 1. Introduction
 What is version control?  
 Why creators need version control  
-Brief history and evolution
+Brief history and evolution (optional)
 
 ## 2. Problems Version Control Solves
 Document management challenges  
