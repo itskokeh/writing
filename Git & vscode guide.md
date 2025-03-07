@@ -33,7 +33,7 @@ step.
 ### Step 1: Download Git
 
 1. Open your web browser and go to the official Git website:
-   [https://git-scm.com/](https://git-scm.com/).
+   [https://git-scm.com](https://git-scm.com/).
 
 2. Click the **Download for Windows** button. The website will automatically
    detect your operating system and provide the correct version.
@@ -54,7 +54,7 @@ step.
 1. The Git Setup Wizard will open. Click **Next** to begin the installation.
 
    ![Git Setup Wizard](./assets/git-images/git-setup-wizard.png)  
-   _**Git Setup Wizard**_
+   _Git Setup Wizard_
 
 2. **Select Components**: On the next screen, you’ll see options for additional
    components. The default selections are fine for most users, but you can
@@ -71,86 +71,59 @@ step.
    ![Git Default Editor](./assets/git-images/git-default-editor.png)  
     _Git Default Editor_
 
-4. **Adjust Your PATH Environment**: This step determines how Git is accessed
+4. **Choose Initial Branch Name**: During the old times, the default was
+   **master** but in recent times **main** has been the preferred option. So,
+   select **Override default branch name for new repositories** and input
+   **main** as the default. Click **Next**.
+
+   ![Choose Initial Branch](./assets/git-images/git-initial-branch.png)
+
+5. **Adjust Your PATH Environment**: This step determines how Git is accessed
    from the command line. Select the recommended option:
    **Git from the command line and also from 3rd-party software**. This ensures
    Git works seamlessly with tools like VS Code. Click **Next**.
 
    ![Git Path Environment](./assets/git-images/git-path-env.png)
 
-5. **Choose HTTPS Transport Backend**: Leave this setting at its default
+6. **Choose SSH Executable**: Select **Use Bundled OpenSSH**. Click **Next**.
+
+   ![Git SSH Executable](./assets/git-images/git-ssh-executable.png)
+
+7. **Choose HTTPS Transport Backend**: Leave this setting at its default
    (**Use the OpenSSL library**) and click **Next**.
 
    ![Git HTTPS Transport Backend](./assets/git-images/git-transport-backend.png)
 
-6. **Configure Line Ending Conversions**: This setting ensures compatibility
+8. **Configure Line Ending Conversions**: This setting ensures compatibility
    between Windows and other operating systems. Select the default option:
    **Checkout Windows-style, commit Unix-style line endings**. Click **Next**.
 
    ![Git Line Ending](./assets/git-images/git-line-endings.png)
 
-7. **Choose Terminal Emulator**: Select
+9. **Choose Terminal Emulator**: Select
    **Use MinTTY (the default terminal of MSYS2)** for a better terminal
    experience. Click **Next**.
 
-8. **Configure Extra Options**: Leave the default options selected and click
-   **Install**.
+   ![Git Terminal Emulator](./assets/git-images/git-terminal-emulator.png)
 
-   _(Insert screenshot of the "Extra Options" screen here.)_
+10. **Choose Git Pull Default Behavior**: Several options to pick from here but
+   for beginners and non-technical people, picking **Fast Forward or Merge** is
+   the best option. Click **Next**.
 
----
+      ![Git Pull Behavior](./assets/git-images/git-pull-default-behaviour.png)
 
-### **Step 4: Complete the Installation**
+11. **Choose Credential Helper**: Select **Git Credential Manager**. Click
+    **Next**.
 
-1. The installer will now install Git on your computer. This may take a few
-   moments.
+      ![Git Credential Helper](./assets/git-images/git-credential-helper.png)
 
-2. Once the installation is complete, check the box that says
-   **Launch Git Bash** if you’d like to open Git Bash immediately. Then,
-   click **Finish**.
+12. **Configure Extra Options**: Leave the default options selected and click
+    **Install**.
 
-   _(Insert screenshot of the "Completing the Installation" screen here.)_
+      ![Git Extra Options](./assets/git-images/git-extra-options.png)
 
----
-
-### **Step 5: Verify the Installation**
-
-1. To make sure Git was installed correctly, open the **Command Prompt** or
-   **Git Bash**.
-2. Type the following command and press **Enter**:
-
-   ```bash
-   git --version
-   ```
-
-3. If Git is installed correctly, you’ll see the version number displayed
-   (e.g., `git version 2.39.0`).
-
-   _(Insert screenshot of the terminal showing the Git version here.)_
-
----
-
-### **Step 6: Configure Git (Optional but Recommended)**
-
-Before you start using Git, it’s a good idea to set up your username and email.
-This information will be used to identify your commits. Open **Git Bash** or the
-**Command Prompt** and run the following commands, replacing the placeholders
-with your name and email:
-
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-```
-
-To verify your settings, run:
-
-```bash
-git config --list
-```
-
-<!-- _(Insert screenshot of the terminal showing the Git configuration here.)_ -->
-
----
+The installer will now install Git on your computer. This may take a few
+moments.
 
 ### **What’s Next?**
 

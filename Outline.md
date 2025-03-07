@@ -17,5 +17,7 @@ Mention any recommended extensions (like GitLens for Git users).
 Show how to confirm that Git and VS Code are installed correctly.
 
 5. Next Steps
-Briefly mention what users can do next (e.g., setting up Git, learning basic commands).
-Here, you can place a "Want to learn more about Version Control?" section with a placeholder for your future article.
+Briefly mention what users can do next (e.g., setting up Git, learning basic
+commands).
+Here, you can place a "Want to learn more about Version Control?" section with a
+placeholder for your future article.
