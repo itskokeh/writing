@@ -56,3 +56,5 @@ Step-by-step visual guides
 
 <video controls width='640' height='640'><source src='3 steps to a successful idea meritocracy.mp4' type='video/mp4'>
 </video>
+
+[Download and watch the video](3%20steps%20to%20a%20successful%20idea%20meritocracy.mp4)
