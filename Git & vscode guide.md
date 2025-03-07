@@ -1,4 +1,21 @@
-# How to Install Git and Visual Studio Code: A Beginner’s Guide
+# Beginner’s Guide to Git, GitHub, and Visual Studio Code Setup
+
+- [Beginner’s Guide to Git, GitHub, and Visual Studio Code Setup](#beginners-guide-to-git-github-and-visual-studio-code-setup)
+  - [Introduction](#introduction)
+  - [1. Installing Git](#1-installing-git)
+    - [Step 1: Download Git](#step-1-download-git)
+    - [Step 2: Run the Installer](#step-2-run-the-installer)
+    - [Step 3: Follow the Installation Wizard](#step-3-follow-the-installation-wizard)
+  - [2. Open a GitHub Account](#2-open-a-github-account)
+    - [Steps to Create a GitHub Account](#steps-to-create-a-github-account)
+    - [Why Set Up GitHub Now?](#why-set-up-github-now)
+  - [3. Installing Visual Studio Code](#3-installing-visual-studio-code)
+    - [Step 1: Download VS Code](#step-1-download-vs-code)
+    - [Step 2: Install VS Code](#step-2-install-vs-code)
+    - [Step 3: Launch VS Code](#step-3-launch-vs-code)
+    - [Step 4: Install Recommended Extensions](#step-4-install-recommended-extensions)
+    - [Step 5: Configure VS Code for Git](#step-5-configure-vs-code-for-git)
+  - [Read my other posts](#read-my-other-posts)
 
 ## Introduction
 
@@ -24,7 +41,7 @@ guide will walk you through the simple steps to install both tools on your
 computer. No prior experience is needed—just follow along, and you’ll be ready
 to start using these tools in no time!
 
-## 2. Installing Git
+## 1. Installing Git
 
 In this section, we’ll walk through the process of installing Git on a Windows
 computer. Don’t worry—it’s straightforward, and I’ll guide you through every
@@ -49,7 +66,7 @@ step.
 2. A security warning may pop up. Click **Yes** to allow the installer to make
    changes to your device.
 
-### **Step 3: Follow the Installation Wizard**
+### Step 3: Follow the Installation Wizard
 
 1. The Git Setup Wizard will open. Click **Next** to begin the installation.
 
@@ -60,7 +77,7 @@ step.
    components. The default selections are fine for most users, but you can
    customize them if you’d like. Click **Next** to continue.
 
-   _(Insert screenshot of the "Select Components" screen here.)_
+   ![Git Components](./assets/git-images/git-components.png)
 
 3. **Choose the Default Editor**: Git needs a text editor for certain tasks. By
    default, it suggests **Vim**, but if you’re not familiar with Vim, you can
@@ -125,20 +142,18 @@ step.
 The installer will now install Git on your computer. This may take a few
 moments.
 
-### **What’s Next?**
-
 Congratulations! You’ve successfully installed Git on your Windows computer.
 In the next section, we’ll install Visual Studio Code and set it up to work
 seamlessly with Git.
 
-### 3. Open a GitHub Account
+## 2. Open a GitHub Account
 
 Before we move on to installing Visual Studio Code, it’s a good idea to set up
 a **GitHub account**. GitHub is a platform that works seamlessly with Git,
 allowing you to store your code online, collaborate with others, and contribute
 to projects.
 
-#### Steps to Create a GitHub Account
+### Steps to Create a GitHub Account
 
 1. Go to [https://github.com](https://github.com) and click **Sign up**.
 
@@ -147,7 +162,7 @@ to projects.
 3. Verify your email address by clicking the link in the confirmation email sent
    by GitHub.
 
-#### Why Set Up GitHub Now?
+### Why Set Up GitHub Now?
 
 Once you’ve installed Visual Studio Code, you’ll be able to connect it to
 GitHub, making it easy to save and share your projects. Having a GitHub account
@@ -155,3 +170,87 @@ ready will save you time later!
 
 Now that your GitHub account is set up, let’s install **Visual Studio Code**
 and get everything connected.
+
+## 3. Installing Visual Studio Code
+
+Visual Studio Code (VS Code) is a powerful, free code editor that works on
+Windows, macOS, and Linux. In this section, we’ll walk you through installing
+VS Code and setting it up for use with Git and GitHub.
+
+### Step 1: Download VS Code
+
+1. Open your web browser and go to the official VS Code website:
+   [https://code.visualstudio.com/](https://code.visualstudio.com/).
+
+2. Click the **Download** button for **Windows**.
+
+   ![vscode homepage](./assets/vscode-images/vscode-website-homepage.png)
+
+### Step 2: Install VS Code
+
+1. Locate the downloaded installer (usually in your `Downloads` folder) and
+   double-click it to run.
+
+2. Follow the installation wizard:
+   - Accept the license agreement.
+   - Choose the default installation location.
+   - Select **Add to PATH** (this makes it easier to open VS Code from the
+     command line).
+
+   ![vsc additional tasks](./assets/vscode-images/vscode-additional-task.png)
+
+3. Click **Install** and wait for the installation to complete.
+
+   ![vsc installation daemon](./assets/vscode-images/vscode-install-daemon.png)
+
+### Step 3: Launch VS Code
+
+1. Once installed, open VS Code from your applications menu
+
+2. Take a moment to explore the interface:
+   - **Sidebar**: Access files, extensions, and source control.
+   - **Editor**: Write and edit your code.
+   - **Terminal**: Run commands directly within VS Code.
+
+### Step 4: Install Recommended Extensions
+
+VS Code’s functionality can be extended with plugins. Here are a few essential
+extensions for Git and general development or writing:
+
+1. **GitLens**: Supercharges Git integration, providing detailed history and
+   blame information for your code.
+   - To install: Go to the Extensions view (`Ctrl+Shift+X`),
+     search for **GitLens**, and click **Install**.
+
+2. **Live Preview**: Launches a local development server with live reload for
+   web development or a preview screen for your `.md` files.
+   - Search for **Live Server** and install it.
+
+### Step 5: Configure VS Code for Git
+
+1. Open the **Source Control** tab in the sidebar (or press `Ctrl+Shift+G`).
+2. If Git is installed correctly, VS Code will automatically detect it. You can
+   now use VS Code to commit, push, and pull changes to your Git repositories.
+
+   _*(Insert screenshot of the Source Control tab in VS Code.)*_
+
+Now that you’ve installed VS Code and set it up for Git, you’re ready to start
+writing code! In the next section, we’ll explore how to create your first
+project and connect it to GitHub.
+
+---
+
+Congratulations! You’ve successfully installed Git, set up a GitHub account,
+and installed Visual Studio Code. Now that your tools are ready, here’s what
+you can do next to start your journey—whether you’re a technical user or just
+getting started with coding.
+
+## Read my other posts
+
+- [Essential Git Commands Every Beginner Should Know](https://kokeh.dev.blog)
+
+- [Git for Non-Coders:
+  Mastering Version Control with GUI Tools](https://kokeh.dev/blog)
+
+- [Mastering Version Control:
+  A Beginner’s Guide to Git and GitHub](https://kokeh.dev/blog)
