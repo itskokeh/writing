@@ -54,5 +54,5 @@ Screenshots
 Comparative diagrams  
 Step-by-step visual guides
 
-<video controls width='640' height='640'><source src='3 steps to a successful idea meritocracy.mp4' type=''>
+<video controls width='640' height='640'><source src='3 steps to a successful idea meritocracy.mp4' type='video/mp4'>
 </video>
