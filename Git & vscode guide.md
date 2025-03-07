@@ -1,21 +1,20 @@
-# Beginner’s Guide to Git, GitHub, and Visual Studio Code Setup
+<h1>Beginner’s Guide to Git, GitHub, and Visual Studio Code Setup</h1>
 
-- [Beginner’s Guide to Git, GitHub, and Visual Studio Code Setup](#beginners-guide-to-git-github-and-visual-studio-code-setup)
-  - [Introduction](#introduction)
-  - [1. Installing Git](#1-installing-git)
-    - [Step 1: Download Git](#step-1-download-git)
-    - [Step 2: Run the Installer](#step-2-run-the-installer)
-    - [Step 3: Follow the Installation Wizard](#step-3-follow-the-installation-wizard)
-  - [2. Open a GitHub Account](#2-open-a-github-account)
-    - [Steps to Create a GitHub Account](#steps-to-create-a-github-account)
-    - [Why Set Up GitHub Now?](#why-set-up-github-now)
-  - [3. Installing Visual Studio Code](#3-installing-visual-studio-code)
-    - [Step 1: Download VS Code](#step-1-download-vs-code)
-    - [Step 2: Install VS Code](#step-2-install-vs-code)
-    - [Step 3: Launch VS Code](#step-3-launch-vs-code)
-    - [Step 4: Install Recommended Extensions](#step-4-install-recommended-extensions)
-    - [Step 5: Configure VS Code for Git](#step-5-configure-vs-code-for-git)
-  - [Read my other posts](#read-my-other-posts)
+- [Introduction](#introduction)
+- [1. Installing Git](#1-installing-git)
+  - [Step 1: Download Git](#step-1-download-git)
+  - [Step 2: Run the Installer](#step-2-run-the-installer)
+  - [Step 3: Follow the Installation Wizard](#step-3-follow-the-installation-wizard)
+- [2. Open a GitHub Account](#2-open-a-github-account)
+  - [Steps to Create a GitHub Account](#steps-to-create-a-github-account)
+  - [Why Set Up GitHub Now?](#why-set-up-github-now)
+- [3. Installing Visual Studio Code](#3-installing-visual-studio-code)
+  - [Step 1: Download VS Code](#step-1-download-vs-code)
+  - [Step 2: Install VS Code](#step-2-install-vs-code)
+  - [Step 3: Launch VS Code](#step-3-launch-vs-code)
+  - [Step 4: Install Recommended Extensions](#step-4-install-recommended-extensions)
+  - [Step 5: Configure VS Code for Git](#step-5-configure-vs-code-for-git)
+- [Read my other posts](#read-my-other-posts)
 
 ## Introduction
 
