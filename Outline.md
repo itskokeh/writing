@@ -1,4 +1,4 @@
-# Title: How to Install Git and Visual Studio Code: A Beginner’s Guide
+# How to Install Git and Visual Studio Code: A Beginner’s Guide
 
 1. Introduction
 Briefly explain what Git and VS Code are (without diving deep into VCS).
