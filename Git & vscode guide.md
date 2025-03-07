@@ -130,3 +130,28 @@ moments.
 Congratulations! You’ve successfully installed Git on your Windows computer.
 In the next section, we’ll install Visual Studio Code and set it up to work
 seamlessly with Git.
+
+### 3. Open a GitHub Account
+
+Before we move on to installing Visual Studio Code, it’s a good idea to set up
+a **GitHub account**. GitHub is a platform that works seamlessly with Git,
+allowing you to store your code online, collaborate with others, and contribute
+to projects.
+
+#### Steps to Create a GitHub Account
+
+1. Go to [https://github.com](https://github.com) and click **Sign up**.
+
+2. Enter a username, your email address, and a secure password.
+
+3. Verify your email address by clicking the link in the confirmation email sent
+   by GitHub.
+
+#### Why Set Up GitHub Now?
+
+Once you’ve installed Visual Studio Code, you’ll be able to connect it to
+GitHub, making it easy to save and share your projects. Having a GitHub account
+ready will save you time later!
+
+Now that your GitHub account is set up, let’s install **Visual Studio Code**
+and get everything connected.
