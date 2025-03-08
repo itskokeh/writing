@@ -12,8 +12,8 @@
   - [Step 1: Download VS Code](#step-1-download-vs-code)
   - [Step 2: Install VS Code](#step-2-install-vs-code)
   - [Step 3: Launch VS Code](#step-3-launch-vs-code)
-  - [Step 4: Install Recommended Extensions](#step-4-install-recommended-extensions)
-  - [Step 5: Configure VS Code for Git](#step-5-configure-vs-code-for-git)
+  - [Step 4: Configure VS Code for Git](#step-4-configure-vs-code-for-git)
+  - [Step 5: Install Recommended Extensions](#step-5-install-recommended-extensions)
 - [Read my other posts](#read-my-other-posts)
 
 ## Introduction
@@ -211,7 +211,37 @@ VS Code and setting it up for use with Git and GitHub.
    - **Editor**: Write and edit your code.
    - **Terminal**: Run commands directly within VS Code.
 
-### Step 4: Install Recommended Extensions
+### Step 4: Configure VS Code for Git
+
+1. Open the **Accounts** tab in the sidebar and click **Turn On Cloud Changes**.
+
+   ![vsc account cloud changes](./assets/vscode-images/vscode-cloud-changes.png)  
+   _Turn On Cloud Changes on Account_
+
+   ![vsc git account signin](./assets/vscode-images/vscode-signin.png)  
+   _Sign in with GitHub_
+
+   ![vsc authorize](./assets/vscode-images/vscode-git-authorize.png)  
+   _Authorize the sign in request_
+
+2. Now, click on **Source Control** tab and select **Clone Repository**. A
+   **Clone from GitHub** popup will appear. Click on it and you will be taken to
+   your browser to authorize the request for cloning a repository. Once
+   authorized, you will see all your repositories on GitHub in your editor for
+   you to select one. And you have successfully linked your GitHub account to
+   VS Code. You can now use VS Code to commit, push, and pull changes to your
+   Git repositories.
+
+   ![vsc source control](./assets/vscode-images/vsc-source-control.png)  
+   _Source Control tab and Clone Repository_
+
+   ![vsc clone from github](./assets/vscode-images/vsc-clone-repository.png)  
+   _Clone from GitHub_
+
+   ![vsc display repos](./assets/vscode-images/vscode-display-repos.png)  
+   > _Display of repositories from GitHub_
+
+### Step 5: Install Recommended Extensions
 
 VS Code’s functionality can be extended with plugins. Here are a few essential
 extensions for Git and general development or writing:
@@ -223,15 +253,7 @@ extensions for Git and general development or writing:
 
 2. **Live Preview**: Launches a local development server with live reload for
    web development or a preview screen for your `.md` files.
-   - Search for **Live Server** and install it.
-
-### Step 5: Configure VS Code for Git
-
-1. Open the **Source Control** tab in the sidebar (or press `Ctrl+Shift+G`).
-2. If Git is installed correctly, VS Code will automatically detect it. You can
-   now use VS Code to commit, push, and pull changes to your Git repositories.
-
-   _*(Insert screenshot of the Source Control tab in VS Code.)*_
+   - Search for **Live Preview** and install it.
 
 Now that you’ve installed VS Code and set it up for Git, you’re ready to start
 writing code! In the next section, we’ll explore how to create your first
