@@ -1,4 +1,5 @@
-<h1>Beginner’s Guide to Git, GitHub, and Visual Studio Code Setup</h1>
+<h1>Beginner’s Guide to Git, GitHub, and Visual Studio Code Setup For
+Windows</h1>
 
 - [Introduction](#introduction)
 - [1. Installing Git](#1-installing-git)
@@ -13,7 +14,6 @@
   - [Step 3: Launch VS Code](#step-3-launch-vs-code)
   - [Step 4: Configure VS Code for Git](#step-4-configure-vs-code-for-git)
   - [Step 5: Install Recommended Extensions](#step-5-install-recommended-extensions)
-- [Read my other posts](#read-my-other-posts)
 
 ## Introduction
 
@@ -255,11 +255,8 @@ project and connect it to GitHub.
 ---
 
 Congratulations! You’ve successfully installed Git, set up a GitHub account,
-and installed Visual Studio Code. Now that your tools are ready, here’s what
-you can do next to start your journey—whether you’re a technical user or just
-getting started with coding.
-
-## Read my other posts
+and installed Visual Studio Code.
+<!-- ## Read my other posts
 
 - [Essential Git Commands Every Beginner Should Know](https://kokeh.dev.blog)
 
@@ -267,4 +264,4 @@ getting started with coding.
   Mastering Version Control with GUI Tools](https://kokeh.dev/blog)
 
 - [Mastering Version Control:
-  A Beginner’s Guide to Git and GitHub](https://kokeh.dev/blog)
+  A Beginner’s Guide to Git and GitHub](https://kokeh.dev/blog) -->
