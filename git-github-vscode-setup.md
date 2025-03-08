@@ -7,7 +7,6 @@
   - [Step 3: Follow the Installation Wizard](#step-3-follow-the-installation-wizard)
 - [2. Open a GitHub Account](#2-open-a-github-account)
   - [Steps to Create a GitHub Account](#steps-to-create-a-github-account)
-  - [Why Set Up GitHub Now?](#why-set-up-github-now)
 - [3. Installing Visual Studio Code](#3-installing-visual-studio-code)
   - [Step 1: Download VS Code](#step-1-download-vs-code)
   - [Step 2: Install VS Code](#step-2-install-vs-code)
@@ -161,12 +160,6 @@ to projects.
 3. Verify your email address by clicking the link in the confirmation email sent
    by GitHub.
 
-### Why Set Up GitHub Now?
-
-Once you’ve installed Visual Studio Code, you’ll be able to connect it to
-GitHub, making it easy to save and share your projects. Having a GitHub account
-ready will save you time later!
-
 Now that your GitHub account is set up, let’s install **Visual Studio Code**
 and get everything connected.
 
@@ -239,7 +232,7 @@ VS Code and setting it up for use with Git and GitHub.
    _Clone from GitHub_
 
    ![vsc display repos](./assets/vscode-images/vscode-display-repos.png)  
-   > _Display of repositories from GitHub_
+   _Display of repositories from GitHub_
 
 ### Step 5: Install Recommended Extensions
 
