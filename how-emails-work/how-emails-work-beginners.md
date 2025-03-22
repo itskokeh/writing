@@ -40,7 +40,7 @@ recipient. Here’s how it works:
 
 **Illustration Suggestion**: A flowchart showing the steps:  
 **Compose → Send → Deliver → Receive**, with simple icons for each step (e.g.,
-a pencil for composing, a paper airplane for sending, a server icon for
+a pencil for composing, a paper aeroplane for sending, a server icon for
 delivering, and an inbox for receiving).
 
 ## How Does the Email Know Where to Go?
@@ -54,7 +54,7 @@ When you send an email, the domain name (like `gmail.com` or `yahoo.com`) helps
 the mail server figure out where to deliver it. It’s like writing a zip code on
 a letter to make sure it goes to the right city.
 
-**Illustration Suggestion**: A labeled email address
+**Illustration Suggestion**: A labelled email address
 (e.g., `john.doe@gmail.com`) with arrows pointing to the username and domain
 name.
 
@@ -120,7 +120,7 @@ Here’s a quick list of suggested visuals to include:
 
 1. A comparison of traditional mail vs. email.
 2. A flowchart of the email process (Compose → Send → Deliver → Receive).
-3. A labeled email address showing the username and domain name.
+3. A labelled email address showing the username and domain name.
 4. A padlock or encryption diagram to represent security.
 5. A split-screen analogy of traditional mail and email.
 6. A globe with email icons to show global communication.
