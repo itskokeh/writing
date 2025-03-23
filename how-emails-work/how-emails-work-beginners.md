@@ -1,4 +1,4 @@
-<h1>How Email Works: A Beginner’s Guide</h1>
+<h1>How Email Works: A Non-Technical Look Behind The Scenes</h1>
 
 Have you ever wondered how an email travels from your computer or phone to
 someone else’s inbox? It might seem like magic, but it’s actually a fascinating
@@ -9,10 +9,6 @@ process that happens in just a few seconds. Let’s break it down step by step!
 Email, short for "electronic mail," is a way to send messages, pictures, or
 documents over the internet. It’s like sending a letter, but instead of paper
 and stamps, you use a computer or smartphone.
-
-**Illustration Suggestion**: A side-by-side comparison of a traditional letter
-(with an envelope, stamp, and mailbox) and an email (with a computer, "Send"
-button, and inbox).
 
 ## The Basics of Sending an Email
 
@@ -38,10 +34,7 @@ recipient. Here’s how it works:
    Finally, the email arrives at the recipient’s inbox. They can open it, read
    your message, and reply if they want!
 
-**Illustration Suggestion**: A flowchart showing the steps:  
-**Compose → Send → Deliver → Receive**, with simple icons for each step (e.g.,
-a pencil for composing, a paper aeroplane for sending, a server icon for
-delivering, and an inbox for receiving).
+   ![Sending Email](./assets/sending-email-basics.png)
 
 ## How Does the Email Know Where to Go?
 
@@ -54,9 +47,7 @@ When you send an email, the domain name (like `gmail.com` or `yahoo.com`) helps
 the mail server figure out where to deliver it. It’s like writing a zip code on
 a letter to make sure it goes to the right city.
 
-**Illustration Suggestion**: A labelled email address
-(e.g., `john.doe@gmail.com`) with arrows pointing to the username and domain
-name.
+![Parts of an Email Address](./assets/parts-of-an-email-address.png)
 
 ## Is Email Secure?
 
@@ -67,11 +58,9 @@ Yes, email is designed to be secure! Here’s how:
 - **Encryption**: Some emails are scrambled into a secret code while they travel
   through the internet, so hackers can’t read them.
 
-**Illustration Suggestion**: A padlock icon next to an email to represent
-security, or a simple diagram showing an email being "scrambled" (encrypted)
-during transmission.
+   ![Secure Email](./assets/secure-email.png)
 
-## Fun Analogy: Email is Like Sending a Letter
+## Real Analogy: Email is Like Sending a Letter
 
 Think of email like sending a traditional letter:
 
@@ -83,9 +72,7 @@ Think of email like sending a traditional letter:
 The only difference is that email happens almost instantly, and you don’t need
 stamps!
 
-**Illustration Suggestion**: A split-screen showing a traditional letter being
-sent (left side) and an email being sent (right side), with matching steps for
-each.
+![Email alongside Traditional Mail](./assets/email-vs-traditional-email.png)
 
 ## Why is Email Important?
 
@@ -95,9 +82,6 @@ Email is one of the most popular ways to communicate because:
 - You can send messages to anyone, anywhere in the world.
 - It’s free (as long as you have an internet connection)!
 
-**Illustration Suggestion**: A globe with email icons flying between different
-countries to show global communication.
-
 ## Quick Recap
 
 - Email is a digital way to send messages over the internet.
@@ -105,23 +89,8 @@ countries to show global communication.
 - Every email address has a username and a domain name.
 - Email is secure because of passwords and encryption.
 
-**Illustration Suggestion**: A summary infographic with icons for each key point
-(e.g., a computer for email, a server for delivery, a lock for security).
-
 ## Try It Yourself
 
 Now that you know how email works, why not send one to a friend or family
 member? Pay attention to the steps: composing, sending, and waiting for a reply.
 You’ll see the magic of email in action!
-
-### Final Notes for Illustrations
-
-Here’s a quick list of suggested visuals to include:
-
-1. A comparison of traditional mail vs. email.
-2. A flowchart of the email process (Compose → Send → Deliver → Receive).
-3. A labelled email address showing the username and domain name.
-4. A padlock or encryption diagram to represent security.
-5. A split-screen analogy of traditional mail and email.
-6. A globe with email icons to show global communication.
-7. A summary infographic at the end.
