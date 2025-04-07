@@ -14,7 +14,8 @@ covers core endpoints, authentication, and examples to help you get started.
 
 ### 1. Initialize a Transaction
 
-**Endpoint**: `POST /transaction/initialize`  
+**Endpoint**: `POST /transaction/initialize`
+
 **Purpose**: Start a payment process.
 
 **Request Parameters (Body)**:
@@ -77,7 +78,8 @@ req.end()
 
 ### 2. Verify Transaction
 
-**Endpoint**: `GET /transaction/verify/:reference`  
+**Endpoint**: `GET /transaction/verify/:reference`
+
 **Purpose**: Confirm a transaction's status.
 
 **Path Parameter**:
@@ -379,13 +381,8 @@ Common HTTP status and fixes.
 
 ```json
 {
-  "status": true,
-  "message": "Charge attempted",
-  "data": {
-    "reference": "0t4gwo2ft6q0n9h",
-    "status": "send_phone",
-    "display_text": "Please send phone"
-  }
+  "status": false,
+  "message": "Transaction reference is invalid"
 }
 ```
 
@@ -397,14 +394,19 @@ transactions), refer to the official Paystack documentation below.
 
 ### Version Information
 
-This documentation is current as of **April 2024** and aligns with Paystack's official API specifications. Since Paystack maintains a continuously updated API:
+This documentation is current as of **April 2024** and aligns with Paystack's
+official API specifications. Since Paystack maintains a continuously updated API:
 
-- Always refer to the [official Paystack API documentation](https://paystack.com/docs/api) for the most current reference
+- Always refer to the [official Paystack API documentation](https://paystack.com/docs/api)
+  for the most current reference
 - Check their [changelog](https://paystack.com/docs/changelog) for updates
 - API base URL: `https://api.paystack.co` (versionless endpoint)
   
 **Need Help?**
 
-Contact [Paystack Support](https://paystack.com/contact) or ask the developer community (e.g., [Stack Overflow](https://stackoverflow.com/questions/tagged/paystack)).  
+Contact [Paystack Support](https://paystack.com/contact) or ask the developer
+community (e.g., [Stack Overflow](https://stackoverflow.com/questions/tagged/paystack)).  
 
-> **Note**: Paystack typically rolls out changes gradually and maintains backward compatibility. Significant changes are announced via their [blog](https://paystack.com/blog) and documentation.
+> **Note**: Paystack typically rolls out changes gradually and maintains backward
+> compatibility. Significant changes are announced via their
+> [blog](https://paystack.com/blog) and documentation.
