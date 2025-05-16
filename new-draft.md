@@ -1,4 +1,8 @@
-## Introduction
+# How I Built a Game with Phaser, React, and Vite: A Hackathon Post-Mortem
+
+>**Intended Audience**: “This write-up is for developers (especially JS devs) curious about browser-based game development using familiar tools like React and Vite.”
+
+## Intro
 
 >*"When a $100K Web3 hackathon demanded a standout project, we bet on an
 endless runner—only to discover that ‘simple’ games require complex glue. Our
@@ -32,7 +36,7 @@ me.
 But let’s be real: the docs are sparse. The official documentation felt like a
 treasure hunt, and I spent more time on GitHub threads, obscure blogs, and
 yes—AI chatbots—to piece together how things worked.<br>
-*(Pro tip: Ask AI to “explain Phaser’s [X] like I’m a React dev.”)*
+>_Pro tip: Ask AI to “explain Phaser’s [X] like I’m a React dev.”_
 
 - **JavaScript or Bust:**
 
@@ -97,25 +101,20 @@ like sprite movement.)*
 
 1. **Phaser’s trade-off**: Less control, more speed. Perfect for hackathons;
    less ideal for hyper-customized engines.
-
 2. **Docs are rough**, but the community (and AI) fills the gaps.
-
 3. **Staying in JavaScript** kept me sane. No regrets.
 
-### React + Phaser: An Unlikely Duo
+### Integrating React and Phaser
 
 #### The DOM Split: A Clever Hack
 
 To avoid React’s virtual DOM diffing and Phaser’s canvas fighting for control,
 we leveraged the humble `<div>`:
 
-1. **Two Containers**:
-
 - `#root`: React’s mount point (for onboarding, rules, and post-game stats).
-
 - `#game-container`: Phaser’s canvas home.
 
-**The Toggle Trick**:
+#### The Toggle Trick
 
 ```javascript
 // Toggle visibility on game start (React code)
@@ -141,13 +140,32 @@ const gameContainer = document.getElementById('game-container');
 }
 ```
 
-```md
-React UI (visible)    ->  Phaser Canvas (visible)  
-[Root: block]         ->  [Root: none]  
-[Game: none]          ->  [Game: block]  
 ```
+Before Game Starts:
 
-**Why this works**:
+  ┌────────────────────┐       ┌──────────────────────┐
+  │  React UI (#root)  │─────▶│  Visible  (d: block) │
+  └────────────────────┘       └──────────────────────┘
+
+  ┌────────────────────────┐   ┌──────────────────────┐
+  │ Phaser Canvas (#game)  │─▶│ Hidden     (d: none) │
+  └────────────────────────┘   └──────────────────────┘
+
+
+During Gameplay:
+
+  ┌────────────────────┐       ┌──────────────────────┐
+  │  React UI (#root)  │─────▶│ Hidden     (d: none) │
+  └────────────────────┘       └──────────────────────┘
+
+  ┌────────────────────────┐   ┌──────────────────────┐
+  │ Phaser Canvas (#game)  │─▶│  Visible  (d: block) │
+  └────────────────────────┘   └──────────────────────┘
+```
+*Figure 2: DOM visibility toggle between React and Phaser containers during
+gameplay flow.*
+
+#### Why this works
 
 - **Performance**: Phaser owns the canvas 100% during gameplay—no React state updates or re-renders.<br>
 - **Simplicity**: No need to bridge frameworks mid-game (though we’ll explore exceptions below).<br>
@@ -161,25 +179,28 @@ this.scoreText = this.add.text(10, 10, "Score: 0", { font: "16px Arial" });
 
 **Pros**:
 
-- No unnecessary React ↔ Phaser communication overhead.<br>
+- No unnecessary React ↔ Phaser communication overhead.
 - Pixel-perfect positioning within the canvas.
 
-**When React Did Shine**
+**When React Did Shine**:
 
 - **Pre-game**: Rules, inspiration, and settings (complex UI easier in JSX).
 - **Post-game**: Sharing scores/analytics (React’s state management).
 
-> **_The Secret_**: Crossing the Streams
+> **_The Secret_**: _Crossing the Streams_<br>
 *"For character selection, we’re experimenting with controlling Phaser from React—like passing a selected skin via localStorage or even real-time updates through a shared state manager (Redux/Zustand). Early tests suggest it’s possible... but at what cost to performance? Stay tuned for Part 2!"*
 
-### Vite: The Unsung Hero
+### Vite and Build Tooling
 
 Vite’s zero-config magic worked perfectly for React—but combining it with
 Phaser required some creative engineering. Unlike Webpack (where we’d drown
 in loader configurations), Vite’s simplicity let us focus on the game, not
 tooling. Here’s how we tamed the beast:
 
-**The Config That Made It Possible**
+>**"Unlike Webpack, Vite was born ready."**<br>
+>_- Professor of Front-end Wizardry, Dr. K. (Master of Speed)_
+
+#### The Config That Made It Possible
 
 ```javascript
 import { defineConfig } from 'vite';
@@ -210,34 +231,30 @@ export default defineConfig({
 });
 ```
 
-**Key Wins**
+**Key Wins**:
 
 - **No Phaser Plugin? No Problem**: Vite’s Rollup underpinnings let us
   manually configure multi-entry builds.
-
 - **Instant Feedback**: HMR kept our React UI updates snappy, while Phaser’s
   canvas reloaded cleanly.
-
 - **No Webpack Nightmares**: Compared to past projects, we spent minutes on
   config—not hours.
 
-**Gotcha We Hit**
+### Lessons Learned
 
-Phaser’s global Phaser object conflicted with Vite’s ESM approach. Our fix:
+#### What Worked
 
-```javascript
-// In index.html
-<script>
-  window.Phaser = await import('phaser'); // Shim for Phaser's UMD
-</script>
-```
-
-**Lesson Learned**:
-
+1. **Phaser + React Separation**: Keeping game/logic decoupled from UI prevented spaghetti code.
+2. **Vite's Speed**: Hot module reloading let us tweak mechanics and see changes instantly. _(Not new I guess)_
 >"Vite’s ‘batteries-included’ approach shines—until you need to weld on new
 batteries. A few tweaks unlocked the best of both worlds."
+3. **Git Branching (Belatedly)**: We ignored branches until a failed React auth integration tangled our codebase. Mid-project crisis made us realize the importance
+> **_Lesson_**: Branch first or cry later. 
+4. **Frequent Commits**: When our physics engine broke post-refactor, `git bisect` pinpointed the bad commit in minutes. New rule: Commit every small, working change.
 
-**Reflections on Version Control and Development Practices**:
+
+#### Reflections on Version Control and Development Practices
+
 Working on this project was a turning point in my understanding of version
 control and development workflow. Until now, I didn’t fully grasp the value
 of the “commit often” mantra—but during development, it finally clicked. I
@@ -257,12 +274,24 @@ isolating the changes much harder.
 
 Looking back, I realize how much I figured out during this project:
 
-I developed better discipline with Git—committing regularly, and
+- I developed better discipline with Git—committing regularly, and
 appreciating the safety it provides.
-
-I learned the critical role of branching, especially for experimental or
+- I learned the critical role of branching, especially for experimental or
 complex features.
+- I gained a deeper appreciation for architectural planning, though I’ll
+reflect more on specific architectural lessons in the coming days.
+- If I were to start over, improved branching strategy would be at the top of
+my list. While I think I did well with commit frequency, there's still room
+for better structural decisions and planning ahead.
 
-I gained a deeper appreciation for architectural planning, though I’ll reflect more on specific architectural lessons in the coming days.
+#### What We'd Change
 
-If I were to start over, improved branching strategy would be at the top of my list. While I think I did well with commit frequency, there's still room for better structural decisions and planning ahead.
+1. **Scope Ruthlessly**: We planned 10 features; 4 shipped. MVP-first next
+time!.
+2. **Team Screening**: Our “illustrator” ghosted us, forcing last-minute asset scrambles.
+>Lesson: Vet collaborators or go solo.
+
+
+## Final Thoughts
+
+This project pushed me to bridge multiple web technologies under intense time pressure. While not every feature made it into the final MVP, I came away with stronger skills in architecture, toolchain optimization, and development workflow. Most importantly, I now understand how to document and reflect on technical decisions with clarity—something I’ll carry into every future project.
