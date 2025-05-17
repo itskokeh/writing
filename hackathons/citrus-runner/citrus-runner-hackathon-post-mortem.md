@@ -1,16 +1,13 @@
+## Phaser + React + Vite: A Hackathon Game Dev Post-Mortem
+
 >**Intended Audience**: “This write-up is for developers (especially JS devs)
 curious about browser-based game development using familiar
 tools like React and Vite.”
 
-## Intro
+>*"A technical deep dive into the stack, tradeoffs, and painful lessons
+from a $100K Web3 hackathon"*
 
->*"When a $100K Web3 hackathon demanded a standout project, we bet on an
-endless runner—only to discover that ‘simple’ games require complex glue. Our
-solution? A browser-based game powered by Phaser, React, and Vite. This
-write-up details how we chose that stack, the integration challenges we faced,
-and what we learned from building an MVP in just 35 days."*
-
-![Build Process](./new-draft/assets/citrus-runner-build.gif)
+![Build Process](./assets/citrus-runner-build.gif)
 _Figure 1: The dev progress from first draft to finished product_
 
 ### TL;DR
@@ -167,7 +164,7 @@ _Listing 4: Manual asset loading in vanilla `JavaScript`_
 - Audio/images must be manually appended to the DOM.
 - No built-in sprite sheet splitting or asset management.
 
-##### Why This Matters for Hackathons:
+###### Why This Matters for Hackathons:
 
 - Phaser lets you focus on gameplay logic.
 - Vanilla JS demands boilerplate for basic features (time better spent
@@ -381,7 +378,7 @@ togglePause () {
   }
 }
 ```
-_Figure 4: Toggle Pause/Play_
+_Listing 9: Toggle Pause/Play function_
 
 ```js
 pauseGame () {
@@ -416,7 +413,7 @@ resumeGame () {
   });
 }
 ```
-_Figure 5: Helper functions_
+_Listing 10: Pause/ Play Helper functions_
 
 This system works by:
 
@@ -461,7 +458,7 @@ workflow. Most importantly, I now understand how to document and reflect on
 technical decisions with clarity—something I’ll carry into every future
 project.
 
-### Demo & Code
+### Demo
 
 **Live Demo:** [https://runner.kokeh.dev](https://runner.kokeh.dev)
 
